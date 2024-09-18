@@ -1,0 +1,38 @@
+name: binary-signed-ghat-malicious
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    permissions:
+      id-token: write
+      packages: write
+      contents: write
+      attestations: write
+
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: The malicious step
+        run: |
+          echo "# This is a malicious update" >> app.py
+
+# TODO: add that when we support artifacts other than containers
+#
+#      - name: Build the binary
+#        run: |
+#          ...
+#
+#      - name: Sign artifact
+#        uses: actions/attest-build-provenance@v1.4.1
+#        with:
+#          subject-path: '${{ github.workspace }}/demo-repo-go-binary'
+#
+#      - name: Upload artifact
+#        uses: actions/upload-artifact@v3
+#        with:
+#          name: demo-repo-python-binary
+#          path: demo-repo-python-binary
