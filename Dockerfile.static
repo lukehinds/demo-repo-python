@@ -1,0 +1,1 @@
+FROM docker.io/library/python:3.8-slim@sha256:23252009f10b4af8a8c90409c54a866473a251b001b74902f04631dd54cfccc8
