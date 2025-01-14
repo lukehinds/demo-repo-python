@@ -1,44 +1,63 @@
-# demo-repo-python 🦦
+# Widgets
 
-## Overview
+A modern Python library for creating and managing widget components.
 
-The `demo-repo-python` project is a repository template primarily intended for testing and
-demonstration purposes with Stacklok projects. It is a simple Python project that allows you to
-quickly get started with testing and demonstrating how you can use Minder and Trusty with
-your Python projects. It features continuous integration (CI) workflows that demonstrate how to
-build, test, and sign artifacts using Sigstore and GitHub Attestations.
+## Description
+
+Widgets is a lightweight, flexible library that provides a collection of reusable UI components and utilities for building interactive applications.
 
 ## Features
 
-- Simple Python Flask server application
-- Dockerfile for building a container image
+- Easy-to-use widget components
+- Customizable themes and styling
+- Responsive design support
+- Cross-platform compatibility
+- Extensive documentation and examples
 
-GitHub Actions workflows for:
+## Installation
 
-- Producing signed and unsigned artifacts using Sigstore and GitHub attestations API
-- Producing artifacts such as container images and binaries
-- Producing container images that are reproducible (always the same digest)
-- Producing "malicious" container images for testing purposes (e.g., code content was altered while building the image)
+```bash
+pip install widgets
+```
 
-Makefile targets for simulating out-of-band signing of artifacts (both intended and not):
+## Quick Start
 
-- Generating signed container images and "malicious" images
-- Pushing container images to container registry (GHCR)
-- Generating a local key pair for signing container images
-- Sign container images using Sigstore by using a local key pair or by going through the Sigstore OIDC sign-in flow
+```python
+from widgets import Widget
 
-Branches:
+# Create a new widget
+widget = Widget("My First Widget")
+widget.display()
+```
 
-- Set of pre-created branches to use for opening PRs each demonstrating a different feature or use case with Minder and Trusty
+## Documentation
 
-## How to Use This Template
+For detailed documentation, please visit our [documentation site](docs/).
 
-### GitHub Users
+## Contributing
 
-1. **Use this Template**:  
-   Click the "Use this template" button above the file list on this repository.
+We welcome contributions! Please feel free to submit a Pull Request.
 
-2. **Create New Repository**:  
-   Provide your repository with a name, description, and set the privacy settings. Click "Create repository from template."
+### Development Setup
 
-Happy testing! 🦦🎉
+1. Clone the repository
+2. Create a virtual environment
+3. Install development dependencies
+4. Run tests
+
+```bash
+git clone https://github.com/yourusername/widgets.git
+cd widgets
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements-dev.txt
+pytest
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you encounter any problems, please file an issue along with a detailed description.
