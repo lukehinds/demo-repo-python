@@ -1,1 +1,63 @@
-IyBXaWRnZXRzCgpBIG1vZGVybiBQeXRob24gbGlicmFyeSBmb3IgY3JlYXRpbmcgYW5kIG1hbmFnaW5nIHdpZGdldCBjb21wb25lbnRzLgoKIyMgRGVzY3JpcHRpb24KCldpZGdldHMgaXMgYSBsaWdodHdlaWdodCwgZmxleGlibGUgbGlicmFyeSB0aGF0IHByb3ZpZGVzIGEgY29sbGVjdGlvbiBvZiByZXVzYWJsZSBVSSBjb21wb25lbnRzIGFuZCB1dGlsaXRpZXMgZm9yIGJ1aWxkaW5nIGludGVyYWN0aXZlIGFwcGxpY2F0aW9ucy4KCiMjIEZlYXR1cmVzCgotIEVhc3ktdG8tdXNlIHdpZGdldCBjb21wb25lbnRzCi0gQ3VzdG9taXphYmxlIHRoZW1lcyBhbmQgc3R5bGluZwotIFJlc3BvbnNpdmUgZGVzaWduIHN1cHBvcnQKLSBDcm9zcy1wbGF0Zm9ybSBjb21wYXRpYmlsaXR5Ci0gRXh0ZW5zaXZlIGRvY3VtZW50YXRpb24gYW5kIGV4YW1wbGVzCgojIyBJbnN0YWxsYXRpb24KCmBgYGJhc2gKcGlwIGluc3RhbGwgd2lkZ2V0cwpgYGAKCiMjIFF1aWNrIFN0YXJ0CgpgYGBweXRob24KZnJvbSB3aWRnZXRzIGltcG9ydCBXaWRnZXQKCiMgQ3JlYXRlIGEgbmV3IHdpZGdldAp3aWRnZXQgPSBXaWRnZXQoIk15IEZpcnN0IFdpZGdldCIpCndpZGdldC5kaXNwbGF5KCkKYGBgCgojIyBEb2N1bWVudGF0aW9uCgpGb3IgZGV0YWlsZWQgZG9jdW1lbnRhdGlvbiwgcGxlYXNlIHZpc2l0IG91ciBbZG9jdW1lbnRhdGlvbiBzaXRlXShkb2NzLykuCgojIyBDb250cmlidXRpbmcKCldlIHdlbGNvbWUgY29udHJpYnV0aW9ucyEgUGxlYXNlIGZlZWwgZnJlZSB0byBzdWJtaXQgYSBQdWxsIFJlcXVlc3QuCgojIyMgRGV2ZWxvcG1lbnQgU2V0dXAKCjEuIENsb25lIHRoZSByZXBvc2l0b3J5CjIuIENyZWF0ZSBhIHZpcnR1YWwgZW52aXJvbm1lbnQKMy4gSW5zdGFsbCBkZXZlbG9wbWVudCBkZXBlbmRlbmNpZXMKNC4gUnVuIHRlc3RzCgpgYGBiYXNoCmdpdCBjbG9uZSBodHRwczovL2dpdGh1Yi5jb20veW91cnVzZXJuYW1lL3dpZGdldHMuZ2l0CmNkIHdpZGdldHMKcHl0aG9uIC1tIHZlbnYgdmVudgpzb3VyY2UgdmVudi9iaW4vYWN0aXZhdGUgICMgT24gV2luZG93cyB1c2UgYHZlbnZcU2NyaXB0c1xhY3RpdmF0ZWAKcGlwIGluc3RhbGwgLXIgcmVxdWlyZW1lbnRzLWRldi50eHQKcHl0ZXN0CmBgYAoKIyMgTGljZW5zZQoKVGhpcyBwcm9qZWN0IGlzIGxpY2Vuc2VkIHVuZGVyIHRoZSBNSVQgTGljZW5zZSAtIHNlZSB0aGUgW0xJQ0VOU0VdKExJQ0VOU0UpIGZpbGUgZm9yIGRldGFpbHMuCgojIyBTdXBwb3J0CgpJZiB5b3UgZW5jb3VudGVyIGFueSBwcm9ibGVtcywgcGxlYXNlIGZpbGUgYW4gaXNzdWUgYWxvbmcgd2l0aCBhIGRldGFpbGVkIGRlc2NyaXB0aW9uLg==
+# Widgets
+
+A modern Python library for creating and managing widget components.
+
+## Description
+
+Widgets is a lightweight, flexible library that provides a collection of reusable UI components and utilities for building interactive applications.
+
+## Features
+
+- Easy-to-use widget components
+- Customizable themes and styling
+- Responsive design support
+- Cross-platform compatibility
+- Extensive documentation and examples
+
+## Installation
+
+```bash
+pip install widgets
+```
+
+## Quick Start
+
+```python
+from widgets import Widget
+
+# Create a new widget
+widget = Widget("My First Widget")
+widget.display()
+```
+
+## Documentation
+
+For detailed documentation, please visit our [documentation site](docs/).
+
+## Contributing
+
+We welcome contributions! Please feel free to submit a Pull Request.
+
+### Development Setup
+
+1. Clone the repository
+2. Create a virtual environment
+3. Install development dependencies
+4. Run tests
+
+```bash
+git clone https://github.com/yourusername/widgets.git
+cd widgets
+python -m venv venv
+source venv/bin/activate  # On Windows use `venv\Scripts\activate`
+pip install -r requirements-dev.txt
+pytest
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Support
+
+If you encounter any problems, please file an issue along with a detailed description.
